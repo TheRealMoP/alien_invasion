@@ -32,6 +32,7 @@ class AlienInvasion:
         
         # Media
         self.pew_sound = pygame.mixer.Sound("sounds/pew.wav")
+        self.exit_sound = pygame.mixer.Sound("sounds/exit_sound.wav")
 
     def run_game(self):
         """Start the main loop"""
@@ -69,6 +70,7 @@ class AlienInvasion:
         elif event.key == pygame.K_TAB:
             self.current_hint = self.hint.get_current_hint(1)
 
+
         #elif event.key == pygame.K_f:
         #    self._toggle_fullscreen()
 
@@ -76,6 +78,7 @@ class AlienInvasion:
         self.game_state.running = False
         self.game_state.started = False
         self._update_screen()
+        self.exit_sound.play()
         render_image_centered(self.screen, "images/exit_splash.png", 2)
         sys.exit()
 
