@@ -21,7 +21,7 @@ class AlienInvasion:
 
         self.screen = pygame.display.set_mode(
             (self.settings.screen_width, self.settings.screen_height))
-        pygame.display.set_caption("Cum for Peace-Death")
+        pygame.display.set_caption("Peace-Death")
 
         self.ship = Ship(self)
         self.splash = Splash(self)
