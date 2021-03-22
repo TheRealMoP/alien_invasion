@@ -49,9 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Resource Include="sounds\pew.wav" />
-    <Resource Include="images\ship_color_64.png" />
-    <Resource Include="images\splash_mod_48.png" />
+    <Content Include="sounds\pew.wav" />
+    <Content Include="images\ship_color_64.png" />
+    <Content Include="images\splash_mod_48.png" />
     <Content Include="README.md" />
     <Content Include="ressources\hints.txt" />
   </ItemGroup>
