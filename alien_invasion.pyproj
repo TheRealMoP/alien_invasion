@@ -22,21 +22,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="alien_invasion.py" />
+    <Compile Include="bullet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ressources.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="screen_operations.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="settings.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ship.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="hint.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="splash.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="strings.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Resource Include="sounds\pew.wav" />
+    <Resource Include="images\ship_color_64.png" />
+    <Resource Include="images\splash_mod_48.png" />
     <Content Include="README.md" />
-    <Content Include="images\ship.png" />
+    <Content Include="ressources\hints.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="NewFolder1\" />
     <Folder Include="images\" />
+    <Folder Include="ressources\" />
+    <Folder Include="sounds\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
